@@ -5,6 +5,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.navOfPages{
+	background-color: #4eef31;
+	color: #ffffff;
+}
+.navOfPages a{
+	color: #ffffff;
+}
+.btn-status{
+	background-color: #4eef31;
+	color: #ffffff;
+}
+.btn-status :hover{
+	color: #ffffff;
+}
 
 /* Login Page */
 .CreateAccount{
@@ -918,6 +932,47 @@ ol {
 /*---------------------
   Featured
 -----------------------*/
+@media (max-width: 767px) {
+	.latest-product-area .properties__button {
+	  float: left;
+	}
+}
+  
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.latest-product-area .properties__button {
+	  float: left;
+	}
+}
+
+.latest-product-area .nav-tabs .nav-link {
+	border: 0;
+	border-bottom: 2px solid transparent;
+}
+  
+@media (max-width: 767px) {
+	.latest-product-area .nav-tabs .nav-link {
+	  padding: .5rem .6rem;
+	}
+}
+  
+.latest-product-area .nav-tabs .nav-item.show .nav-link, .latest-product-area .nav-tabs .nav-link.active {
+	color: #4eef31;
+}  
+.latest-product-area .nav-tabs .nav-item {
+	padding-bottom: 10px;
+	display: block;
+	color: #8f8f96;
+	text-transform: capitalize;
+	font-size: 16px;
+}  
+.latest-product-area .nav-tabs {
+	margin-bottom: 15px;
+	padding-bottom: 0px;
+	position: relative;
+	border: 0;
+	display: flex;
+	justify-content: center;
+}  
 .product-ratting i {
 	margin-right: -2px;
 	color: #EDBB0E;
@@ -2550,7 +2605,7 @@ ol {
 
 .contact__widget span {
 	font-size: 36px;
-	color: #7fad39;
+	color: #4eef31;
 }
 
 .contact__widget h4 {
@@ -2958,6 +3013,9 @@ ol {
 	.hero__categories {
 		margin-bottom: 30px;
 	}
+	.hero__categories ul{
+		display: none;
+	}
 	.hero__search {
 		margin-bottom: 30px;
 	}
@@ -2982,7 +3040,6 @@ ol {
 		position: relative;
 		left: 0;
 		top: 0;
-		-webkit-transform: translateY(0);
 	}
 	.categories__slider.owl-carousel .owl-nav button.owl-next {
 		right: -10px;
